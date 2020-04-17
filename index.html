@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>d3 test!</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://d3js.org/d3-selection.v1.js"></script>
+  <script src="js/graph.js"></script>
+
+  <style>
+    #wrapper {
+      padding: 30px;
+    }
+    .person {
+      float: left;
+      position: relative;
+    }
+    .label {
+      position: absolute;
+      left: 50%;
+      bottom: -21px;
+      font-size: 12px;
+      line-height: 18px;
+      color: #777;
+      text-align: center;
+      transform: translateX(-50%);
+    }
+    .bar:nth-child(2n) .label {
+      display: none;
+    }
+    .bar {
+      position: relative;
+      /* display: inline-block;
+      width: 4px;
+      margin-right: 15px;
+      vertical-align: bottom;
+      border-radius: 2px;
+      background-color: #FFCD00; */
+    }
+
+    .bar text {
+      color: #777;
+      text-align: center;
+    }
+    #hoho2 {
+      text-align: center;
+    }
+    /* #hoho2::after {
+      content: "";
+      display: block;
+      padding-top: 76%;
+    } */
+
+  </style>
+</head>
+<body>
+  <!-- <svg width="100%" height="190">
+    <g>
+      <rect width="10" x="0" y="0" />
+      <rect width="10" x="10" y="0" />
+      <rect width="10" x="20" y="0" />
+      <rect width="10" x="30" y="0" />
+      <rect width="10" x="40" y="0" />
+      <rect width="10" x="50" y="0" />
+      <rect width="10" x="60" y="0" />
+      <rect width="10" x="70" y="0" />
+      <rect width="10" x="80" y="0" />
+      <rect width="10" x="90" y="0" />
+      <rect width="10" x="100" y="0" />
+      <rect width="10" x="110" y="0" />
+    </g>
+  </svg> -->
+
+  <!-- width="100%" height="169px" -->
+  <!-- <div id="hoho"></div> -->
+  <!-- preserveAspectRatio="xMidYMid meet" -->
+  <div id="wrapper">
+    <svg id="hoho2" 
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%" height="100%"
+    viewBox="0 0 232 169"
+    ></svg>
+  </div>
+</body>
+</html>
